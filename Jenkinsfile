@@ -1,8 +1,8 @@
 pipeline {
   agent any
- // triggers {
-   // pollSCM('* * * * *')  // Or rely on webhook (preferred)
-  //}
+  triggers {
+    pollSCM('* * * * *')  // Or rely on webhook (preferred)
+  }
   stages {
     stage('Build') {
       steps {
