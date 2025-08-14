@@ -1,6 +1,7 @@
 stages:
   - build
 
+ 
 hello_job:
   stage: build
   script:
