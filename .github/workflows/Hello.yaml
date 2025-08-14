@@ -1,8 +1,8 @@
 stages:
   - build
 
- 
-hello_job:
-  stage: build
-  script:
-    - echo "This is a simple build job for a non-Node.js project."
+jobs:
+  hello_job:
+    stage: build
+    script:
+      - echo "This is a simple build job for a non-Node.js project."
