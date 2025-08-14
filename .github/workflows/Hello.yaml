@@ -1,7 +1,13 @@
-stages:
-  - build
+name: .NET CI
 
+on:
+  push:
+    branches:
+      - GitActionBranch
 jobs:
-  hello_job:
-    stage: build
-      - echo "This is a simple build job for a non-Node.js project."
+ build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Your descriptive step name
+        run: echo "Hello, GitHub Actions!"
